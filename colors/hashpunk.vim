@@ -56,6 +56,12 @@ endfunction
 " For reference on what each group does, please refer to this:
 " vimdoc.sourceforge.net/htmldoc/syntax.html
 "
+hi StatusLine ctermbg=242 ctermfg=16 guibg=#6c6c6c guifg=#000000
+hi StatusLineNC ctermbg=242 ctermfg=16 guibg=#6c6c6c guifg=#000000
+
+hi TabLineFill ctermbg=242 ctermfg=16 guibg=#6c6c6c guifg=#000000
+hi TabLine ctermbg=242 ctermfg=16 guibg=#000000 guifg=#6c6c6c
+
 call s:highlight('Comment', s:Grey42, s:clear, s:italic)
 call s:highlight('Constant', s:MainColor, s:clear, s:none)
 call s:highlight('String', s:Grey93, s:clear, s:none)
@@ -102,8 +108,8 @@ call s:highlight('ColorColumn', s:MainColor, s:Grey15, s:none)
 
 
 " Interface highlighting
-call s:highlight('Normal', s:Grey93, s:Grey15, s:none)
-call s:highlight('Visual', s:clear, s:Grey0, s:none)
+call s:highlight('Normal', s:Grey93, s:Grey7, s:none)
+call s:highlight('Visual', s:Grey7, s:Grey54, s:none)
 call s:highlight('Cursor', s:clear, s:Grey0, s:none)
 call s:highlight('iCursor', s:clear, s:Grey0, s:none)
 call s:highlight('LineNr', s:Grey66, s:clear, s:none)
